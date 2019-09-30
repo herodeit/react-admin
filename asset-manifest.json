@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/react-admin/static/css/main.ef8becb3.chunk.css",
+    "main.js": "/react-admin/static/js/main.cfff7ca7.chunk.js",
+    "main.js.map": "/react-admin/static/js/main.cfff7ca7.chunk.js.map",
+    "runtime~main.js": "/react-admin/static/js/runtime~main.f8761412.js",
+    "runtime~main.js.map": "/react-admin/static/js/runtime~main.f8761412.js.map",
+    "static/js/2.54467e02.chunk.js": "/react-admin/static/js/2.54467e02.chunk.js",
+    "static/js/2.54467e02.chunk.js.map": "/react-admin/static/js/2.54467e02.chunk.js.map",
+    "index.html": "/react-admin/index.html",
+    "precache-manifest.f8a508b8b32b9d09a9b71c4d1539d008.js": "/react-admin/precache-manifest.f8a508b8b32b9d09a9b71c4d1539d008.js",
+    "service-worker.js": "/react-admin/service-worker.js",
+    "static/css/main.ef8becb3.chunk.css.map": "/react-admin/static/css/main.ef8becb3.chunk.css.map",
+    "static/media/main.scss": "/react-admin/static/media/user_bg3.27650860.jpg",
+    "static/media/logo.png": "/react-admin/static/media/logo.75ea661c.png",
+    "static/media/placeholder.jpg": "/react-admin/static/media/placeholder.59e6f5b8.jpg"
+  }
+}
