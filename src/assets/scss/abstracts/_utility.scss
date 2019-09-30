@@ -1,0 +1,223 @@
+// utility
+//
+
+//------------------------------------| border |------------------------------------
+.border {
+  border: 1px solid $color-black !important;
+}
+
+.border-2 {
+  border: 2px solid !important;
+}
+
+.border-3 {
+  border: 3px solid !important;
+}
+
+.border-4 {
+  border: 4px solid !important;
+}
+// one
+.border-top-2 {
+  border-top: 2px solid !important;
+}
+
+.border-right-2 {
+  border-right: 2px solid !important;
+}
+
+.border-left-2 {
+  border-left: 2px solid !important;
+}
+
+.border-bottom-2 {
+  border-bottom: 2px solid !important;
+}
+// color
+@each $color, $value in $color {
+  .border-#{$color} {
+    border-color: #{$value} !important;
+  }
+}
+
+//------------------------------------| rounded |------------------------------------
+.rounded-5 {
+  border-radius: 5px !important;
+}
+
+.rounded-6 {
+  border-radius: 6px !important;
+}
+// double
+.rounded-top-0 {
+  border-top-right-radius: 0 !important;
+  border-top-left-radius: 0 !important;
+}
+
+.rounded-bottom-0 {
+  border-bottom-right-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+
+.rounded-top-5 {
+  border-radius: 5px 5px 0 0 !important;
+}
+
+.rounded-bottom-5 {
+  border-radius: 0 0 5px 5px !important;
+}
+
+.rounded-top-6 {
+  border-radius: 6px 6px 0 0 !important;
+}
+
+.rounded-bottom-6 {
+  border-radius: 0 0 6px 6px !important;
+}
+// one
+.rounded-top-right-6 {
+  border-top-right-radius: 6px !important;
+}
+
+.rounded-top-left-6 {
+  border-top-right-radius: 6px !important;
+}
+
+.rounded-bottom-left-6 {
+  border-bottom-left-radius: 6px !important;
+}
+
+.rounded-bottom-right-6 {
+  border-bottom-left-radius: 6px !important;
+}
+
+//------------------------------------| cursor |------------------------------------
+.c-pointer {
+  cursor: pointer !important;
+}
+
+.c-pointer-all * {
+  cursor: pointer !important;
+}
+
+.cursor-auto {
+  cursor: auto !important;
+}
+
+//------------------------------------| auto box |------------------------------------
+.mg-auto {
+  margin: auto !important;
+}
+
+.mg-center {
+  margin: 0 auto !important;
+}
+
+.ml-auto {
+  margin-left: auto !important;
+}
+
+//------------------------------------| overflow |------------------------------------
+.overflow-auto {
+  overflow: auto !important;
+}
+
+.overflow-hd {
+  overflow: hidden !important;
+}
+
+.overflow-y-hd {
+  overflow-y: hidden !important;
+}
+
+.overflow-x-hd {
+  overflow-x: hidden !important;
+}
+
+//------------------------------------| text |------------------------------------
+.text-decoration-none {
+  text-decoration: none !important;
+}
+
+.text-decoration-underline {
+  text-decoration: underline !important;
+  text-underline-position: under !important;
+}
+
+.text-id12 {
+  text-indent: -12px !important;
+  margin-left: 12px !important;
+}
+
+.text-id14 {
+  text-indent: -14px !important;
+  margin-left: 14px !important;
+}
+
+//------------------------------------| flex |------------------------------------
+.flex-center {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.flex-between {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+}
+
+.flex-around {
+  display: flex !important;
+  justify-content: space-around !important;
+  align-items: center !important;
+}
+
+.flex-start {
+  display: flex !important;
+  justify-content: flex-start !important;
+  align-items: center !important;
+}
+
+//------------------------------------| Helper |------------------------------------
+.link-none {
+  pointer-events: none !important;
+}
+
+.border-none {
+  border: none !important;
+}
+
+// Page tablets (min-width: 768px)
+//
+@include media-breakpoint-up(md) {
+  .border-md-none {
+    border: none !important;
+  }
+
+  .rounded-md-0 {
+    border-radius: 0 !important;
+  }
+
+  .flex-md-center {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: baseline !important;
+  }
+
+  .flex-md-between {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+  }
+
+  .flex-md-left {
+    display: flex !important;
+    justify-content: left !important;
+    align-items: center !important;
+  }
+
+  .text-md-center {
+    text-align: center !important;
+  }
+}

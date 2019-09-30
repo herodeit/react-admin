@@ -1,0 +1,23 @@
+// table
+// 
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+
+  tbody {
+    th {
+      border: 1px solid $color-silver;
+      text-align: center;
+      padding: 1px;
+      font-size: 12px;
+    }
+
+    td {
+      border: 1px solid $color-silver;
+      text-align: center;
+      padding: 1px;
+      font-size: 12px;
+    }
+  }
+}

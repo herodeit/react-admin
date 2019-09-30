@@ -1,0 +1,360 @@
+// form
+// 
+
+//------------------------------------| input |------------------------------------
+.draw-input,
+.draw-textarea {
+  color: $color-outer-space;
+  border: 1px solid $color-mercury;
+  padding: 5px 10px;
+  padding-right: 32px;
+  box-sizing: border-box;
+  line-height: 20px;
+  max-width: none;
+  display: block;
+}
+
+//------------------------------------| select |------------------------------------
+.draw-select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 100%;
+  font-size: 14px;
+  background: transparent;
+  padding: 5px 10px;
+  padding-right: 32px;
+  box-sizing: border-box;
+  height: auto;
+  line-height: 20px;
+  max-width: none;
+  display: block;
+  color: $color-outer-space;
+}
+
+//------------------------------------| Checkbox |------------------------------------
+.regular-checkbox {
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  position: relative;
+
+  label {
+    cursor: pointer;
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    top: 0;
+    left: 0;
+    background: $color-white;
+    border: 1px solid $color-picton-blue;
+    border-radius: 2px;
+
+    &:after {
+      opacity: 0;
+      content: '';
+      position: absolute;
+      width: 14px;
+      height: 8px;
+      background: transparent;
+      top: 5px;
+      left: 3px;
+      border: 3px solid $color-white;
+      border-top: none;
+      border-right: none;
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+/* The checkbox-btn */
+.checkbox-btn {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  font-size: 14px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  height: 20px;
+
+  /* Hide the browser's default checkbox */
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  /* Create a custom checkbox */
+  .check-mark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: $color-mercury;
+    border-radius: 4px;
+
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      left: 25%;
+      width: 8px;
+      height: 13px;
+      transform: rotate(45deg) translate(-50%, -50%);
+    }
+
+    &-medium {
+      &:before,
+      &:after {
+        left: 35%;
+      }
+    }
+
+    &:before {
+      top: 51%;
+      border: solid $color-white;
+      border-width: 0 2px 2px 0;
+    }
+
+    &:after {
+      display: none;
+      top: 50%;
+      border: solid $color-mantis;
+      border-width: 0 2px 2px 0;
+    }
+
+    &-race {
+      height: 40px;
+      width: 90%;
+      border-radius: 2px;
+    }
+
+    &-large {
+      width: 97%;
+
+      &:before,
+      &:after {
+        left: 45%;
+      }
+    }
+  }
+
+  /* On mouse-over, add a grey background color */
+  &:hover input ~ .check-mark {
+    background-color: $color-silver;
+  }
+
+  /* When the checkbox is checked, add a blue background */
+  input:checked ~ .check-mark {
+    background-color: $color-frost;
+    border: 1px solid $color-mantis;
+  }
+
+  /* Show the check-mark when checked */
+  input:checked ~ .check-mark:after {
+    display: block;
+  }
+}
+
+/* checkbox setting */
+.checkboxSetting-btn {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  font-size: 14px;
+  user-select: none;
+  height: 20px;
+
+  /* Hide the browser's default checkbox */
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  /* Create a custom checkbox */
+  .checkSetting {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: $color-silver-chalice;
+    border-radius: 4px;
+
+    &.active {
+      background-color: $color-celadon;
+      border: 1px solid $color-sea-green;
+    }
+
+    &-tick {
+      content: "";
+      position: absolute;
+      left: 22%;
+      width: 8px;
+      height: 13px;
+      transform: rotate(45deg) translate(-50%, -50%);
+      top: 51%;
+      border: solid $color-white;
+      border-width: 0 2px 2px 0;
+    }
+
+    &-large {
+      height: 40px;
+      width: 95%;
+      top: -10px;
+      left: 3px;
+
+      &-box {
+        left: 45%;
+      }
+    }
+
+    &-small {
+      height: 40px;
+      width: 85%;
+      top: -10px;
+      left: 2px;
+
+      &-box {
+        left: 35%;
+      }
+    }
+
+    &-medium {
+      height: 40px;
+      width: 85%;
+      top: -10px;
+      left: 2px;
+
+      &-second {
+        width: 85%;
+      }
+
+      &-box {
+        left: 35%;
+      }
+
+      &-second-box {
+        left: 33%;
+      }
+
+      &-frame {
+        height: 92px;
+        top: -36px;
+      }
+    }
+
+    &.active .checkSetting-tick {
+      border: solid $color-sea-green;
+      border-width: 0 2px 2px 0;
+    }
+  }
+}
+
+//------------------------------------| radio |------------------------------------
+.normal-radio {
+  position: relative;
+  padding: 20px 0 20px 40px;
+  text-align: left;
+
+  label {
+    cursor: pointer;
+    color: $color-gray;
+
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      border-radius: 50%;
+    }
+
+    &:before {
+      left: 0;
+      width: 20px;
+      height: 20px;
+      margin: -15px 0 0;
+      background: $color-white;
+      box-shadow: 0 0 1px $color-gray;
+    }
+
+    &:after {
+      left: 5px;
+      width: 10px;
+      height: 10px;
+      margin: -10px 0 0;
+      opacity: 0;
+      background: $color-picton-blue;
+      // transform: translate3d(-40px, 0, 0) scale(0.5);
+      // transition: opacity 0.25s ease-in-out, transform 0.25s ease-in-out;
+    }
+  }
+
+  input[type="radio"] {
+    position: absolute;
+    top: 0;
+    left: -9999px;
+    visibility: hidden;
+
+    &:checked + label {
+      color: $color-emperor;
+
+      &:before {
+        box-shadow: 0 0 1px $color-picton-blue;
+      }
+
+      &:after {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.regular-big-checkbox {
+  input[type=checkbox]:checked + label:after {
+    opacity: 1;
+  }
+
+  input[type=checkbox]:checked + label {
+    background-color: $color-picton-blue;
+  }
+}
+
+//------------------------------------| DayPicker |------------------------------------
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+@include mq(tablet) {
+  .normal-radio-md label {
+    width: 17px !important;
+    height: 17px !important;
+    margin-top: 3px !important;
+
+    &:after {
+      width: 10px;
+      height: 7px;
+      top: 3px;
+    }
+  }
+
+  .upload-btn-wrapper input[type=file] {
+    top: 50px;
+  }
+}

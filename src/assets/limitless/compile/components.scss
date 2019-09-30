@@ -1,0 +1,203 @@
+/* ------------------------------------------------------------------------------
+ *
+ *  # Components
+ *
+ *  Components import. Ordering matters. See _config.scss for more options
+ *
+ * ---------------------------------------------------------------------------- */
+
+
+// Pace page loader
+@import "../shared/pace/theme-default";
+
+
+// Forms
+// ------------------------------
+
+// Uniform
+@import "../components/forms/uniform";
+
+// Switchery
+@import "../components/forms/switchery";
+
+// BS switch
+@import "../components/forms/bootstrap-switch";
+
+
+// Select2
+@import "../components/forms/select2";
+
+// Multiselect
+@import "../components/forms/multiselect";
+
+
+// Passy
+@import "../components/forms/passy";
+
+// Typeahead
+@import "../components/forms/typeahead";
+
+// Validation
+@import "../components/forms/validation";
+
+// Floating labels
+@import "../components/forms/floating-labels";
+
+// Alpaca
+@import "../components/forms/alpaca";
+
+
+// Tokenfield
+@import "../components/forms/tokenfield";
+
+// Tags input
+@import "../components/forms/tags-input";
+
+
+// Touchspin spinners
+@import "../components/forms/touchspin";
+
+// Dual listboxes
+@import "../components/forms/dual-listbox";
+
+
+// Wizard
+@import "../components/forms/wizard";
+
+
+// Pickers
+// ------------------------------
+
+// Daterange picker
+@import "../components/pickers/daterange";
+
+// Pickadate base
+@import "../components/pickers/pickadate/base";
+
+// Pickadate date picker
+@import "../components/pickers/pickadate/date";
+
+// Pickadate time picker
+@import "../components/pickers/pickadate/time";
+
+// Anytime picker
+@import "../components/pickers/anytime";
+
+// Color picker
+@import "../components/pickers/spectrum";
+
+
+// File uploaders
+// ------------------------------
+
+// Plupload
+@import "../components/forms/uploaders/plupload";
+
+// File input
+@import "../components/forms/uploaders/file-input";
+
+// Dropzone
+@import "../components/forms/uploaders/dropzone";
+
+
+// Notifications
+// ------------------------------
+
+// Noty notifications
+@import "../components/notifications/noty";
+
+// PNotify notifications
+@import "../components/notifications/pnotify";
+
+// jGrowl notifications
+@import "../components/notifications/jgrowl.scss";
+
+// Sweet Alerts
+//@import "../components/notifications/sweet-alerts";
+
+
+// Sliders
+// ------------------------------
+
+// Slider pips
+@import "../components/sliders/slider-pips";
+
+// NoUI slider
+@import "../components/sliders/noui-slider";
+
+// Ion range slider
+@import "../components/sliders/ion-range-slider";
+
+
+// jQuery UI components
+// ------------------------------
+
+// Interactions
+@import "../components/jquery_ui/interactions";
+
+// Widgets
+@import "../components/jquery_ui/widgets";
+
+
+// UI components
+// ------------------------------
+
+// [Material] Ripple effect
+//@import "../components/ui/ripple";
+
+// Prism - syntax highlighter
+@import "../components/ui/prism";
+
+// Slinky - multi level drilldown menu
+@import "../components/ui/slinky";
+
+// Sticky kit
+@import "../components/ui/sticky";
+
+// Headroom - hhide navbar on scroll
+@import "../components/ui/headroom";
+
+// Dragula
+@import "../components/ui/dragula";
+
+// Perfect scrollbar
+@import "../components/ui/perfect-scrollbar";
+
+
+// Misc components
+// ------------------------------
+
+// [Material] Floating action buttons
+@import "../components/misc/fab";
+
+// Fancytree
+@import "../components/misc/fancytree";
+
+// Progress buttons
+@import "../components/misc/progress-buttons";
+
+// Full calendar
+@import "../components/misc/fullcalendar.scss";
+
+// Image cropper
+@import "../components/misc/image-cropper";
+
+// Lightbox plugin
+@import "../components/misc/fancybox";
+
+
+
+
+// Page kits
+// ------------------------------
+
+
+// Other components
+// ------------------------------
+
+// Heading elements
+@import "../components/ui/header-elements";
+
+@import "../shared/pages/login";
+
+
